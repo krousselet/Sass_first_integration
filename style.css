@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Inter&display=swap");
+.container, header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+}
+
+header .logo, header .hamburger {
+  text-align: left;
+  font-family: "Gravitas One", cursive;
+  font-size: 60px;
+  line-height: 66px;
+}
+
+.bloc-two p, .bloc-one p {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+.bloc-three, .bloc-one img {
+  width: 100%;
+  height: 25%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.bloc-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-top: 20px;
+}
+
+/* GENERAL */
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: none;
+}
+
+p {
+  font-family: font;
+}
+
+@media (min-width: 1440px) {
+  .hamburger {
+    display: none;
+    color: #333333;
+    cursor: pointer;
+  }
+}
+body {
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+/* HEADER */
+header {
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+@media (min-width: 1440px) {
+  header {
+    width: 90%;
+    align-items: center;
+  }
+  header .anchors {
+    display: flex;
+    margin: 20px 0;
+    width: 50%;
+    justify-content: right;
+  }
+  header a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #333333;
+    justify-content: right;
+    padding-left: 3vw;
+  }
+}
+header .hamburger {
+  width: 50px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* CONTAINER */
+@media (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 25px;
+  }
+}
+
+/* BLOC-FIRST */
+@media (min-width: 1440px) {
+  .bloc-one {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .bloc-one img {
+    height: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .bloc-one .grid-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 25px;
+  }
+}
+.bloc-one h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  padding-top: 20px;
+  font-weight: 900;
+}
+@media (min-width: 1440px) {
+  .bloc-one h1 {
+    grid-row: span 2;
+  }
+}
+.bloc-one p {
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.bloc-one button {
+  width: 50%;
+  border-radius: 5pc;
+  background: #BBACC1;
+  color: #F1DEDE;
+  height: 50px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* BLOC-SECOND */
+.bloc-two {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background: #333333;
+  margin: 20px 0;
+}
+@media (min-width: 1440px) {
+  .bloc-two {
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    margin: 0;
+  }
+}
+.bloc-two h2 {
+  color: #BBACC1;
+  text-align: left;
+  margin: 20px;
+  font-size: 40px;
+  line-height: 60px;
+}
+.bloc-two h3 {
+  margin: 10px 20px;
+  color: #F1DEDE;
+  font-size: 19px;
+  line-height: 25px;
+}
+.bloc-two p {
+  margin: 20px;
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
+}
+.bloc-two .line {
+  margin: 0 20px;
+  border-top: 1px white solid;
+}
+
+/* BLOC-THIRD*/
+.bloc-three {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1440px) {
+  .bloc-three {
+    flex-direction: row;
+    grid-area: 2/1/2/3;
+    height: 100%;
+    padding: 25px 0;
+  }
+}
+.bloc-three .set {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  width: 100%;
+  height: 100%;
+}
+.bloc-three .set .left-part {
+  width: 25%;
+  overflow: hidden;
+}
+@media (min-width: 1440px) {
+  .bloc-three .set .left-part {
+    min-width: 130px;
+  }
+}
+.bloc-three .set .right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  text-align: left;
+  margin: 0 20px;
+}
+.bloc-three .set .number {
+  font-size: 31px;
+  text-align: left;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+.bloc-three .set .heading {
+  font-size: 19px;
+  text-align: left;
+  padding: 20px 0;
+  color: #BBACC1;
+  font-weight: 900;
+  font-family: "Inter" sans-serif;
+  line-height: 25px;
+}
+.bloc-three .set .text {
+  font-size: 15px;
+  text-align: left;
+  line-height: 25px;
+}/*# sourceMappingURL=style.css.map */
